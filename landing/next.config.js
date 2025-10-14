@@ -10,6 +10,12 @@ const nextConfig = {
   // Optimize for production
   poweredByHeader: false,
   generateEtags: false,
+  // Ensure proper routing
+  trailingSlash: false,
+  // Disable static optimization for dynamic routes
+  experimental: {
+    outputFileTracingRoot: undefined,
+  },
 }
 
 module.exports = nextConfig

@@ -34,6 +34,9 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
+# Ensure the server.js file exists and is executable
+RUN chmod +x server.js
+
 USER nextjs
 
 EXPOSE 3000
