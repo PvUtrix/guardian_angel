@@ -14,7 +14,7 @@ const nextConfig = {
   trailingSlash: false,
   // Disable static optimization for dynamic routes
   experimental: {
-    outputFileTracingRoot: undefined,
+    // Remove invalid option
   },
 }
 
