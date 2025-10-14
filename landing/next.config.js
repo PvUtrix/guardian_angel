@@ -13,6 +13,9 @@ const nextConfig = {
   generateEtags: false,
   // Ensure proper routing
   trailingSlash: false,
+  // Ensure proper base path handling
+  basePath: '',
+  assetPrefix: '',
 }
 
 module.exports = nextConfig
