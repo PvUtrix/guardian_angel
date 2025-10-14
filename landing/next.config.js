@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  // Remove standalone for now to debug
+  // output: 'standalone',
   serverExternalPackages: [],
   images: {
     domains: ['localhost'],
@@ -12,10 +13,6 @@ const nextConfig = {
   generateEtags: false,
   // Ensure proper routing
   trailingSlash: false,
-  // Disable static optimization for dynamic routes
-  experimental: {
-    // Remove invalid option
-  },
 }
 
 module.exports = nextConfig
