@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove standalone for now to debug
-  // output: 'standalone',
+  // Enable standalone output for Docker deployment
+  output: 'standalone',
   serverExternalPackages: [],
   images: {
     domains: ['localhost'],
